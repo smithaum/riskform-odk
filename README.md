@@ -219,7 +219,6 @@ criminal-risk-assessment-xlsform/
 | ├── 🗂️ `field-mapping.md` | Mapping between the PDF fields and XLSForm fields |
 | ├── 🧪 `testing.md` | XLSForm testing and validation details |
 | └── 🔐 `test-data.md` | Fictional data used for testing |
-| 📁 `screenshots/` | Screenshots demonstrating the project |
 | └── ✅ `xlsform-validation.png` | Screenshot showing successful form validation |
 | 🎥 `assignment-demo.mp4` | Assignment demonstration video *(to be added)* |
 The demonstration video will be added to the repository later.
