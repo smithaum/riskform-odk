@@ -207,6 +207,21 @@ criminal-risk-assessment-xlsform/
 └── README.md
 ````
 
+## 📦 Project Contents
+
+| File / Folder | Description |
+|---|---|
+| 📊 `Criminal_Risk_Assessment_XLSForm.xlsx` | Main ODK XLSForm containing the survey, choices, and settings sheets |
+| 📖 `README.md` | Complete project documentation |
+| 📌 `CHANGELOG.md` | Records the development and validation updates |
+| 📁 `docs/` | Detailed project documentation |
+| ├── 📋 `form-overview.md` | Overview of the Criminal Risk Assessment form |
+| ├── 🗂️ `field-mapping.md` | Mapping between the PDF fields and XLSForm fields |
+| ├── 🧪 `testing.md` | XLSForm testing and validation details |
+| └── 🔐 `test-data.md` | Fictional data used for testing |
+| 📁 `screenshots/` | Screenshots demonstrating the project |
+| └── ✅ `xlsform-validation.png` | Screenshot showing successful form validation |
+| 🎥 `assignment-demo.mp4` | Assignment demonstration video *(to be added)* |
 The demonstration video will be added to the repository later.
 
 ---
