@@ -1,269 +1,450 @@
-# Criminal Risk Assessment – ODK XLSForm
+# 🛡️ Criminal Risk Assessment – ODK XLSForm
+
+<p align="center">
+
+**A structured digital implementation of the Criminal Risk Assessment Request using ODK XLSForm**
+
+</p>
+
+<p align="center">
+
+`ODK XLSForm` • `Microsoft Excel` • `Form Logic` • `Validation` • `GitHub`
+
+</p>
+
+---
 
 ## 📌 Project Overview
 
-This project focuses on developing an **ODK XLSForm** based on the provided **Criminal Risk Assessment Request** form.
+This project implements the provided **Criminal Risk Assessment Request** as a structured **ODK XLSForm**.
 
-The purpose of this project is to convert the provided paper-based form into a structured digital form that can be used with **ODK (Open Data Kit)**.
+The original document was analyzed and translated into a digital data-collection form while preserving its major sections, information requirements, predefined choices, required fields, and applicable conditional behaviour.
 
-The XLSForm represents the information and requirements provided in the original Criminal Risk Assessment Request document, including consent information, personal identification details, identification documents, and criminal risk assessment request details.
-
----
-
-## 🎯 Objective
-
-The main objective of this assignment is to:
-
-- Convert the provided Criminal Risk Assessment Request form into an ODK XLSForm.
-- Structure the form into appropriate ODK question types.
-- Define selectable choices where required.
-- Mark mandatory fields as required.
-- Implement relevant form logic where applicable.
-- Prepare the form for validation and testing.
-- Maintain the structure and information provided in the original document.
+The completed form was then tested using fictional data and successfully validated using an ODK XLSForm testing environment.
 
 ---
 
-## 📄 Source Form
+## 🎯 Project Objective
 
-The XLSForm was developed based on the provided:
+The objective of this assignment is to demonstrate the ability to:
 
-**Criminal Risk Assessment Request**
-
-The source form contains information related to:
-
-- Consent for Criminal Risk Assessment
-- Release of Information
-- Personal identification
-- Date of birth
-- Gender
-- Previous names
-- Address and contact information
-- Identification documents
-- Criminal Risk Assessment request information
-- Agency information
-- Assigned worker information
-- Submitting designate information
-- Request date
+- 📄 Analyze an existing paper-based form
+- 🔍 Identify and classify individual form fields
+- 📊 Convert the structure into an ODK XLSForm
+- 🧩 Select appropriate XLSForm question types
+- 🔘 Configure predefined choice lists
+- 🔴 Configure required fields
+- 🔄 Implement conditional form behaviour
+- 🧪 Test the completed form
+- ✅ Validate the final XLSForm
+- 📚 Document the complete implementation
 
 ---
 
-## 🗂️ XLSForm Structure
+# ✨ Key Features
 
-The Excel workbook is divided into three main worksheets:
+### 📋 Structured Digital Form
 
-### 1. `survey`
+The paper-based Criminal Risk Assessment Request has been transformed into a structured digital form suitable for ODK-based data collection.
 
-The `survey` worksheet contains the main structure of the digital form.
+### 🧩 Appropriate Question Types
 
-It includes fields for:
+Different field types are used depending on the information being collected, including:
 
-- Consent information
-- Date
-- Signature information
-- Witness information
-- First name
-- Second name
-- Last name
-- Date of birth
-- Gender
-- Other last names used
-- Other first names used
-- Current address
-- Current phone numbers
-- City/Province or Country of Birth
-- Identification information
-- Driver's licence information
-- Name of person being assessed
-- Agency submitting the request
-- Reason for risk assessment
-- Assigned worker
-- Previous criminal risk assessment date
-- Submitting designate
-- Designate phone number
-- Designate email
-- Designate fax
-- Request date
+- `text`
+- `date`
+- `select_one`
+- `select_multiple`
 
----
+### 🔘 Centralized Choice Lists
 
-### 2. `choices`
+Selectable options are maintained separately in the `choices` worksheet.
 
-The `choices` worksheet contains options used by questions that require predefined selections.
+This keeps the form structure organized and makes choice management easier.
 
-Examples include:
+### 🔴 Required Field Validation
 
-#### Gender
+Fields identified as required in the source document are configured as mandatory in the digital form.
 
-- Male
-- Female
+### 🔄 Conditional Behaviour
 
-#### Identification
+Additional fields can be displayed based on previous selections where applicable.
 
-- Birth Certificate
-- Social Insurance Card
-- Manitoba Health Card
-- Treaty Card
-- Other
-- Manitoba Driver's License with Photo
+### 🧪 Form Validation
 
-#### Reason for Risk Assessment
+The completed XLSForm was tested using fictional information and successfully validated.
 
-- With Consent
-- Without Consent
-- Child Protection Concerns
-- Place of Safety
-- Kinship or Customary Care Agreement
+**Validation Result:**
+
+> ✅ **Form is valid!**
 
 ---
 
-### 3. `settings`
+# 🏗️ Form Architecture
 
-The `settings` worksheet contains the basic configuration of the ODK form.
-
-It includes:
-
-- Form title
-- Form ID
-- Form version
-- Default language
-
----
-
-## 🔐 Required Fields
-
-The original Criminal Risk Assessment Request form identifies certain sections with an asterisk (`*`) as required.
-
-These requirements have been reflected in the XLSForm by marking the corresponding fields as mandatory.
-
-Examples include:
-
-- First Name
-- Last Name
-- Date of Birth
-- Gender
-- Current Address
-- Current Phone Numbers
-- City/Province or Country of Birth
-- Name of Agency Submitting Request
-- Reason for Risk Assessment
-- Assigned Worker
-- Submitting Designate
-- Designate Phone
-- Designate Email
-- Request Date
-
----
-
-## 🔄 Form Logic
-
-The XLSForm includes basic conditional logic for fields that depend on a previous selection.
-
-For example, additional identification information can be requested when the user selects the corresponding identification option.
-
-This helps keep the digital form organized and prevents unnecessary fields from being displayed when they are not applicable.
-
----
-
-## 🛠️ Tools & Technologies
-
-The project uses:
-
-- **ODK XLSForm**
-- **Microsoft Excel**
-- **GitHub**
-
-The XLSForm format is used to define the structure, questions, choices, requirements, and logic of the digital form.
-
----
-
-## 🧪 Form Validation & Testing
-
-The XLSForm will be validated and tested using an ODK-compatible XLSForm testing tool.
-
-Testing will be used to verify:
-
-- Form structure
-- Question types
-- Required fields
-- Choice lists
-- Conditional fields
-- Form navigation
-- Overall form functionality
-
-Any validation errors identified during testing will be corrected before the final submission.
-
----
-
-## 📁 Repository Structure
-
-The repository currently contains:
+The XLSForm follows the standard three-sheet structure:
 
 ```text
-criminal-risk-assessment-xlsform/
-│
-├── Criminal_Risk_Assessment_XLSForm.xlsx
-│
-└── README.md
+                    ODK XLSForm
+                         │
+          ┌──────────────┼──────────────┐
+          ↓              ↓              ↓
+       survey         choices        settings
+          │              │              │
+          ↓              ↓              ↓
+     Questions       Options        Configuration
+     & Logic         & Lists
 ````
 
-## 📦 Project Contents
+### 📊 Survey Layer
 
-| File / Folder | Description |
-|---|---|
-| 📊 `Criminal_Risk_Assessment_XLSForm.xlsx` | Main ODK XLSForm containing the survey, choices, and settings sheets |
-| 📖 `README.md` | Complete project documentation |
-| 📌 `CHANGELOG.md` | Records the development and validation updates |
-| 📁 `docs/` | Detailed project documentation |
-| ├── 📋 `form-overview.md` | Overview of the Criminal Risk Assessment form |
-| ├── 🗂️ `field-mapping.md` | Mapping between the PDF fields and XLSForm fields |
-| ├── 🧪 `testing.md` | XLSForm testing and validation details |
-| └── 🔐 `test-data.md` | Fictional data used for testing |
-| └── ✅ `xlsform-validation.png` | Screenshot showing successful form validation |
-| 🎥 `assignment-demo.mp4` | Assignment demonstration video *(to be added)* |
-The demonstration video will be added to the repository later.
+Contains:
+
+* Question types
+* Field names
+* Labels
+* Hints
+* Required settings
+* Relevant conditions
+* Constraints
+* Appearance settings
+
+### 🔘 Choice Layer
+
+Contains predefined response options for selection-based questions.
+
+### ⚙️ Configuration Layer
+
+Contains:
+
+* Form title
+* Form ID
+* Version
+* Default language
 
 ---
 
-## 📊 Project Workflow
+# 📄 Source Form Analysis
 
-The overall workflow followed for this assignment is:
+The source **Criminal Risk Assessment Request** contains multiple information areas.
+
+## ✍️ Consent Information
+
+Includes information related to:
+
+* Consent
+* Date
+* Signature
+* Witness information
+
+## 👤 Personal Information
+
+Includes:
+
+* First name
+* Second name
+* Last name
+* Date of birth
+* Gender
+* Other names
+* Address
+* Phone numbers
+* Place of birth
+
+## 🪪 Identification Information
+
+The form provides identification options including:
+
+* Birth Certificate
+* Social Insurance Card
+* Manitoba Health Card
+* Treaty Card
+* Other identification
+* Manitoba Driver's License with Photo
+
+## 📝 Risk Assessment Request
+
+Includes:
+
+* Name of person being assessed
+* Agency submitting the request
+* Reason for risk assessment
+* Assigned worker
+* Previous assessment date
+* Submitting designate
+* Designate phone
+* Designate email
+* Designate fax
+* Request date
+
+The source document explicitly states that sections marked with an asterisk (`*`) are required. 
+
+---
+
+# 🧠 Implementation Highlights
+
+## 1. Field Mapping
+
+Each relevant field from the source document was mapped to an appropriate XLSForm question type.
+
+Example:
+
+| Source Information | XLSForm Type      |
+| ------------------ | ----------------- |
+| First Name         | `text`            |
+| Date of Birth      | `date`            |
+| Gender             | `select_one`      |
+| Identification     | `select_multiple` |
+| Request Date       | `date`            |
+| Agency Name        | `text`            |
+
+---
+
+## 2. Choice Management
+
+Selection-based questions use centralized choice lists.
+
+For example:
 
 ```text
-Criminal Risk Assessment PDF
-            ↓
-Identify Form Fields
-            ↓
-Create XLSForm
-            ↓
-Configure Survey Sheet
-            ↓
-Configure Choices Sheet
-            ↓
-Configure Settings Sheet
-            ↓
-Add Required Fields & Logic
-            ↓
-Validate & Test XLSForm
-            ↓
-Upload to GitHub
-            ↓
-Record Demonstration Video
-            ↓
-Final Submission
+Gender
+├── Male
+└── Female
+```
+
+Identification:
+
+```text
+Identification
+├── Birth Certificate
+├── Social Insurance Card
+├── Manitoba Health Card
+├── Treaty Card
+├── Other
+└── Manitoba Driver's License
 ```
 
 ---
 
-## 🎥 Video Demonstration
+## 3. Required Fields
 
-**Video demonstration will be added here after recording.**
+Required information from the source document is represented using XLSForm's required-field configuration.
 
-The video will demonstrate the completed XLSForm and explain the implementation.
+This ensures that important request information cannot be skipped during form completion.
 
 ---
 
-## 📌 Assignment Submission
+## 4. Conditional Logic
+
+The form uses conditional behaviour where additional information depends on a previous selection.
+
+For example:
+
+```text
+Select Identification
+        │
+        ├── Other
+        │     ↓
+        │  Specify ID
+        │
+        └── Driver's License
+              ↓
+        Enter Licence Number
+```
+
+This keeps the form cleaner and avoids displaying unnecessary fields.
+
+---
+
+# 🧪 Testing & Validation
+
+Testing was performed using fictional data to verify the behaviour of the completed form.
+
+### 🔍 Validation Checklist
+
+| Test Area          | Result   |
+| ------------------ | -------- |
+| Form structure     | ✅ Passed |
+| Question types     | ✅ Passed |
+| Choice lists       | ✅ Passed |
+| Required fields    | ✅ Passed |
+| Conditional fields | ✅ Passed |
+| Form navigation    | ✅ Passed |
+| Form validation    | ✅ Passed |
+
+### 🟢 Final Validation
+
+The completed form successfully returned:
+
+**`Form is valid!`**
+
+A screenshot of the validation result is included in the repository.
+
+---
+
+# 🔐 Data & Privacy
+
+All information used during testing and demonstration is **fictional test data**.
+
+No real personal information is intentionally used in the testing dataset.
+
+The test data is used only for:
+
+* 🧪 Form validation
+* 📸 Demonstration screenshots
+* 🎥 Video demonstration
+
+---
+
+# 📸 Validation Evidence
+
+The repository includes visual evidence of successful validation.
+
+```text
+screenshots/
+└── xlsform-validation.png
+```
+
+The screenshot demonstrates that the completed form successfully passed validation.
+
+---
+
+# 📚 Documentation
+
+Detailed documentation is available in the `docs/` directory.
+
+| Document               | Purpose                        |
+| ---------------------- | ------------------------------ |
+| 📋 `form-overview.md`  | Overview of the source form    |
+| 🗂️ `field-mapping.md` | Source field → XLSForm mapping |
+| 🧪 `testing.md`        | Testing and validation process |
+| 🔐 `test-data.md`      | Fictional testing dataset      |
+
+---
+
+# 📊 Project Workflow
+
+```text
+┌──────────────────────────────────┐
+│ Criminal Risk Assessment PDF     │
+└────────────────┬─────────────────┘
+                 ↓
+        🔍 Analyze Form
+                 ↓
+        📝 Identify Fields
+                 ↓
+        📊 Build XLSForm
+                 ↓
+      ┌──────────┼──────────┐
+      ↓          ↓          ↓
+   Survey     Choices    Settings
+      └──────────┼──────────┘
+                 ↓
+       🔄 Add Form Logic
+                 ↓
+        🔴 Configure Rules
+                 ↓
+          🧪 Test Form
+                 ↓
+          ✅ Validate
+                 ↓
+          📸 Capture Evidence
+                 ↓
+          🐙 GitHub Upload
+                 ↓
+          🎥 Demo Video
+                 ↓
+          📤 Final Submission
+```
+
+---
+
+# 🛠️ Tools & Technologies
+
+| Tool                     | Purpose                           |
+| ------------------------ | --------------------------------- |
+| 📊 ODK XLSForm           | Digital form development          |
+| 📗 Microsoft Excel       | XLSForm authoring                 |
+| 🐙 GitHub                | Version control & project hosting |
+| 🧪 ODK XLSForm Validator | Form validation                   |
+| 📝 Markdown              | Project documentation             |
+
+---
+
+# 📦 Repository Structure
+
+```text
+criminal-risk-assessment-xlsform/
+│
+├── 📄 Criminal_Risk_Assessment_Request.pdf
+├── 📊 Criminal_Risk_Assessment_XLSForm.xlsx
+├── 📖 README.md
+├── 📌 CHANGELOG.md
+├── 🖼️ xlsform-validation.png
+│
+├── 📁 docs/
+│   ├── 📋 form-overview.md
+│   ├── 🗂️ field-mapping.md
+│   ├── 🧪 testing.md
+│   └── 🔐 test-data.md
+│
+└── 🎥 assignment-demo.mp4
+```
+
+---
+
+# 🎥 Demonstration Video
+
+The demonstration video will showcase the complete implementation.
+
+### The demonstration will cover:
+
+1. 📄 Source PDF
+2. 📊 XLSForm structure
+3. 📋 Survey worksheet
+4. 🔘 Choices worksheet
+5. ⚙️ Settings worksheet
+6. 📱 Generated digital form
+7. 🧪 Fictional test data
+8. 🔄 Form behaviour
+9. ✅ Successful validation
+10. 🐙 GitHub repository
+
+**🎥 Video: To be added**
+
+---
+
+# 🎯 Learning Outcomes
+
+Through this assignment, the following practical skills were demonstrated:
+
+* 📊 XLSForm development
+* 🧩 Form field design
+* 🔘 Choice-list management
+* 🔄 Conditional form logic
+* 🧪 Form testing
+* ✅ Form validation
+* 📚 Technical documentation
+* 🐙 GitHub project organization
+
+---
+
+# 🚀 Future Improvements
+
+Potential improvements for a production-ready implementation could include:
+
+* 📱 Deployment to an ODK-compatible mobile workflow
+* 🔐 Additional data validation rules
+* 📊 Automated submission and reporting workflows
+* 🔄 Expanded conditional logic
+* 🧪 Additional edge-case testing
+* 📈 Integration with a backend data-processing workflow
+
+These improvements are outside the current assignment scope.
+
+---
+
+# 📌 Assignment Submission
 
 The completed project will be submitted through the required WhatsApp group using the specified format:
 
@@ -273,7 +454,7 @@ Your Name - GitHub Repository Link
 
 ---
 
-## 👩🏻‍💻 Author
+# 👩🏻‍💻 Author
 
 **Smitha U M**
 
@@ -281,8 +462,10 @@ Computer Science and Engineering Student
 
 ---
 
-## 📚 Reference
+# 📚 References
 
-The ODK XLSForm documentation and testing resources provided with the assignment were used as references for developing and validating the form.
+* ODK XLSForm Documentation
+* ODK XLSForm Testing Resources
+* Provided Criminal Risk Assessment Request Form
 
 ```
