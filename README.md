@@ -413,21 +413,21 @@ The demonstration video will showcase the complete implementation.
 
 ## 🎥 Video Demonstration
 
-The complete demonstration of the Criminal Risk Assessment ODK XLSForm is available below.
+The complete demonstration video for the Criminal Risk Assessment ODK XLSForm is available below.
 
-🎥 **[Criminal Risk Assessment XLSForm Demonstration](./Criminal_Risk_Assessment_XLSForm_Demonstration.mp4)**
+▶️ **[Watch the Demonstration Video](https://drive.google.com/file/d/1NGGh9uEVGsYIYZTOqSvTIiWBJ3wInSeR/view?usp=drive_link)**
 
 The demonstration covers:
 
-- 📄 Original source form
+- 📄 Original Criminal Risk Assessment form
 - 📊 XLSForm structure
 - 📋 Survey worksheet
 - 🔘 Choices worksheet
 - ⚙️ Settings worksheet
-- 📱 Digital form demonstration
+- 🌐 Digital form
 - 🧪 Fictional test data
 - 🪪 Identification selection
-- ✅ XLSForm validation
+- ✅ Form validation
 - 🐙 GitHub repository
 
 # 🎯 Learning Outcomes
