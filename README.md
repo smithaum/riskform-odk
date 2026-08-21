@@ -381,15 +381,14 @@ criminal-risk-assessment-xlsform/
 ├── 📖 README.md
 ├── 📌 CHANGELOG.md
 ├── 🌐 LIVE_FORM.md
+├── 🎥 VIDEO_DEMONSTRATION.md
 ├── 🖼️ xlsform-validation.png
 │
-├── 📁 docs/
-│   ├── 📋 form-overview.md
-│   ├── 🗂️ field-mapping.md
-│   ├── 🧪 testing.md
-│   └── 🔐 test-data.md
-│
-└── 🎥 Criminal_Risk_Assessment_XLSForm_Demonstration.mp4
+└── 📁 docs/
+    ├── form-overview.md
+    ├── field-mapping.md
+    ├── testing.md
+    └── test-data.md
 ```
 
 ---
