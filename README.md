@@ -389,7 +389,7 @@ criminal-risk-assessment-xlsform/
 │   ├── 🧪 testing.md
 │   └── 🔐 test-data.md
 │
-└── 🎥 assignment-demo.mp4
+└── 🎥 Criminal_Risk_Assessment_XLSForm_Demonstration.mp4
 ```
 
 ---
@@ -411,9 +411,24 @@ The demonstration video will showcase the complete implementation.
 9. ✅ Successful validation
 10. 🐙 GitHub repository
 
-**🎥 Video: To be added**
+## 🎥 Video Demonstration
 
----
+The complete demonstration of the Criminal Risk Assessment ODK XLSForm is available below.
+
+🎥 **[Criminal Risk Assessment XLSForm Demonstration](./Criminal_Risk_Assessment_XLSForm_Demonstration.mp4)**
+
+The demonstration covers:
+
+- 📄 Original source form
+- 📊 XLSForm structure
+- 📋 Survey worksheet
+- 🔘 Choices worksheet
+- ⚙️ Settings worksheet
+- 📱 Digital form demonstration
+- 🧪 Fictional test data
+- 🪪 Identification selection
+- ✅ XLSForm validation
+- 🐙 GitHub repository
 
 # 🎯 Learning Outcomes
 
@@ -444,17 +459,6 @@ Potential improvements for a production-ready implementation could include:
 These improvements are outside the current assignment scope.
 
 ---
-
-# 📌 Assignment Submission
-
-The completed project will be submitted through the required WhatsApp group using the specified format:
-
-```text
-Your Name - GitHub Repository Link
-```
-
----
-
 # 👩🏻‍💻 Author
 
 **Smitha U M**
